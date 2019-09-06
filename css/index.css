@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+.navbar {
+	background-color: #666369;
+	color: white;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.hamburger {
+	font-size: 22px;
+	margin: 5px;
+}
+
+.menu {
+	display: none;
+}
+
+section {
+	border: solid 1px #C4C4C4;
+	width: 80%;
+	margin: 5px auto;
+}
+
+.fas, h2 {
+	display: flex;
+	justify-content: center;
+}
+
+p {
+	padding: 3px;
+}
+
+@media (max-width: 719px) { /* media query for mobile */
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.logo {
+		margin: auto;
+	}
+
+	.title {
+		margin: auto;
+	}
+
+	footer {
+		display: none;
+	}
+}
+
+
+@media (min-width: 720px) and (max-width: 990px) { /* media query for tablets*/
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.logo {
+		margin: auto 0 auto 10%;
+	}
+
+	.title {
+		margin-right: 20%;
+	}
+
+	.mainContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 5px 0;
+	}
+
+	footer {
+		border-top: solid 1px #C4C4C4;
+	}
+
+	.social {
+		list-style: none;
+		display: flex;
+		overflow: hidden;
+		justify-content: space-around;
+	}
+} 
+
+@media (min-width: 991px) { /* media query for large screens */
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.logo {
+		margin: auto 0 auto 3%;
+	}
+
+	.title {
+		margin-right: 27%;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	.navbar {
+		background-color: #666369;
+		color: white;
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		justify-content: flex-end;
+	}
+
+	.menu > li {
+		float: right;
+		padding: 10px 20px;
+	}
+
+	.menu > li:hover {
+		color: white;
+		background-color: #DDD;
+		cursor: pointer;
+	}
+
+	.mainContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin: 5px 0;
+	}
+
+	section {
+		width: 30%;
+	}
+
+	footer {
+		border-top: solid 1px #C4C4C4;
+	}
+
+	.social {
+		list-style: none;
+		display: flex;
+		overflow: hidden;
+		justify-content: space-around;
+	}
+}
+
